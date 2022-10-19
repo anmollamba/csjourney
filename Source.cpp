@@ -29,6 +29,21 @@ int main()
 	cout << endl << endl << "Enter the index to be modified: ";
 	cin >> index;
 
+	/// Catches the index value bigger than the length, displays the error message, and sets the index to be default at 0.////
+
+	try
+	{
+		if (index > length)
+		{
+			throw runtime_error("Index is not in the array!!");
+		}
+	}
+	catch (runtime_error ex)
+	{
+		cout << "Error caught; Index chosen is greater than the array!" << endl;
+		index = 0;
+	}
+
 	key = modify_index(arr, index);
 
 	cout << arr[index] << " Value changed to " << key;
@@ -37,6 +52,21 @@ int main()
 	print_array(arr, length);
 
 	//////////////Adding a new integer given/////////////////
+	int element = 0;
+	try
+	{
+		if (element < 0)
+		{
+			throw runtime_error("Element is a negative number");
+
+		}
+	}
+	catch (runtime_error ex)
+	{
+		cout << "Error caught; Element is a negative number" << endl;
+		element = 0;
+	}
+
 	add_new_integer(arr, &length);
 
 	cout << endl << "New Array";
