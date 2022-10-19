@@ -8,3 +8,9 @@ You can then enter a new value that will be added to the end of the existing arr
 ![Screenshot (439)](https://user-images.githubusercontent.com/114272219/192076851-8413f0b5-860f-4946-97c6-7aad9e5c9df7.png)
 You will then be asked to delete any value from the existing array 
 ![Screenshot (440)](https://user-images.githubusercontent.com/114272219/192076873-4a9aa027-853f-4881-97e1-515ed365331a.png)
+
+
+
+Question 1 from Assignment 2 
+Throws the exception when the index is greater than the array
+![Screenshot (452)](https://user-images.githubusercontent.com/114272219/196601270-598f7341-0bf4-4d10-a1b7-ce1752a25a2b.png)
